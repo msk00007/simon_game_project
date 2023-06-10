@@ -52,7 +52,19 @@ function gamebegin(){
     })
 
 }
-
+$(".start").click(function(){
+    if(gamelevel===0){
+        var selector = Math.floor(Math.random()*4);
+        var startclr = gameclr[selector];
+        gameplay.push(startclr);
+        $("."+startclr).addClass("changeanim");
+        setTimeout(function(){
+            $("."+startclr).removeClass("changeanim");
+        },100);
+        gamelevel=1;
+        $(".title").text("GAME LEVEL"+gamelevel);
+    }
+})
 function gamestart(mybutton){
     userselect.push(mybutton);
     correct_game=true;
