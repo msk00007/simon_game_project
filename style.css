@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(8, 6, 33);
+}
+.title{
+    text-align: center;
+    color: rgba(255, 255, 35, 0.827);
+    margin-bottom: 30px;
+    font-family: 'press Start 2P','Times New Roman';
+}
+.container{
+    display: grid;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.container div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding:10px;
+    border-radius: 40px;
+    border: 5px solid rgb(13, 210, 240);
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.changeanim{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+.error{
+    background-color: red;
+}
